@@ -130,7 +130,7 @@ body {
 }
 
 .logo-image {
-  width: 30px; /* Adjust size as needed */
+  width: 100px; /* Adjust size as needed */
   margin-bottom: 5px; /* Add some space between logo and ConvAI Lab */
   display: block;
   margin-left: auto;
