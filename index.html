@@ -313,7 +313,7 @@
       Multi-WOZ
       </h2>
       <p>
-        We evaluate ReSpAct in a MultiWOZ environment, where the agent assists with booking hotels, restaurants, and taxis by understanding user preferences, asking clarifying questions, and making informed decisions. Compared to a ReAct baseline that operates without user feedback, ReSpAct achieves higher scores on two metrics: Inform Rate, which checks if all requested information (e.g., hotel address and price) was correctly provided, and Success Rate, which further requires that all user goals, like completing a booking, are fully met. These results highlight the benefit of interactive dialogue for improving task accuracy.
+        We evaluate ReSpAct in a MultiWOZ environment, where the agent assists with booking hotels, restaurants, and taxis by understanding user preferences, asking clarifying questions, and making informed decisions. Compared to a ReAct baseline that operates without user feedback, ReSpAct achieves higher scores on two metrics: Inform Rate, which checks if all requested information (e.g., hotel address and price) was correctly provided, and Success Rate, which further requires that all user goals, like completing a booking, are fully met. Using GPT-4o-mini, ReSpAct scores 72.2% on Inform and 51.8% on Success, compared to the baseline 66.7% and 48.8%, respectively. 
       </p>
       <br>
     <div class="hero-body" style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
@@ -337,7 +337,7 @@
       WebShop
     </h2>
     <p>
-      We evaluate ReSpAct in a WebShop environment, where the agent navigates a simulated online shopping platform containing over 1.18 million real-world products to identify and purchase items based on user preferences. The agent actively searches for products matching user requirements, asks clarifying questions to refine search results, and makes informed purchasing decisions. To assess performance, we use two metrics: (1) average score, which reflects the percentage of desired attributes met by the chosen product across all episodes, and (2) success rate, which measures the percentage of episodes where the chosen product fully satisfies the users requirements. Our results show that ReSpAct significantly outperforms a baseline agent that operates without interactive dialogue, underscoring the critical role of interactive questioning and feedback in enhancing accuracy and user satisfaction in task-oriented web shopping agents.
+      We evaluate ReSpAct in a WebShop environment, where the agent navigates a simulated online shopping platform containing over 1.18 million real-world products to identify and purchase items based on user preferences. The agent actively searches for products matching user requirements, asks clarifying questions to refine search results, and makes informed purchasing decisions. To assess performance, we use two metrics: (1) average score, which reflects the percentage of desired attributes met by the chosen product across all episodes, and (2) success rate, which measures the percentage of episodes where the chosen product fully satisfies the users requirements. Our results show that ReSpAct achieves an average score of 32.7% and a success rate of 12% with a user simulator. With human interaction, ReSpAct reaches an 85.8% average score and 50% success rate, underscoring the critical role of interactive questioning and feedback in enhancing accuracy and user satisfaction with task-oriented web shopping agents.
     </p>
     <br>
     <div class="hero-body" style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
@@ -346,7 +346,7 @@
         <source src="static/videos/respact-demo-webshop.mov"
         type="video/mp4">
       </video>
-      <img src="static/images/table-shop.png" alt="MY ALT TEXT"/>
+      <img src="static/images/table-shop.png" alt="MY ALT TEXT" style="width: 50%;"/>
       <h2 class="subtitle has-text-centered">
         Comparison of Score and success rate (SR) on 100 Test WebShop trajectories using GPT-4o-mini
       </h2>
